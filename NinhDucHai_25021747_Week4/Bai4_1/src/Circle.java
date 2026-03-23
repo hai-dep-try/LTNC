@@ -1,0 +1,17 @@
+// 2. Thiết kế Class Con: Circle
+class Circle extends Shape {
+
+    public Circle(int x, int y) {
+        super(x, y); // Gọi constructor của lớp cha (Shape)
+    }
+
+    @Override
+    public void draw() {
+        System.out.println("Vẽ hình tròn tại (" + x + ", " + y + ")");
+    }
+
+    @Override
+    public void erase() {
+        System.out.println("Xóa hình tròn tại (" + x + ", " + y + ")");
+    }
+}

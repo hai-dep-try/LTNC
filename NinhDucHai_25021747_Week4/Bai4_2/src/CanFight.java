@@ -1,0 +1,3 @@
+interface CanFight {
+    void fight();
+}
