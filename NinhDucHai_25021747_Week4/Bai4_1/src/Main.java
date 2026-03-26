@@ -1,4 +1,4 @@
-// 3. Thực hành
+
 public class Main {
     public static void main(String[] args) {
         // Tạo một Circle tại (10, 10)

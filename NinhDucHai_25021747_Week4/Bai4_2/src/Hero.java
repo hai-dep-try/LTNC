@@ -12,7 +12,7 @@ class Hero extends ActionCharacter implements CanFly, CanSwim, CanFight {
         System.out.println("Hero is swimming");
     }
 
-    // LƯU Ý QUAN TRỌNG:
+
     // Chúng ta KHÔNG CẦN implement lại hàm fight() của interface CanFight ở đây.
     // Vì lớp cha ActionCharacter đã cung cấp sẵn một public method tên là fight()
     // khớp hoàn toàn với signature của interface CanFight.

@@ -1,4 +1,4 @@
-// Thiết kế Class Con: Square (Mở rộng thêm theo yêu cầu đề bài)
+// Thiết kế Class Con: Square
 class Square extends Shape {
 
     public Square(int x, int y) {
