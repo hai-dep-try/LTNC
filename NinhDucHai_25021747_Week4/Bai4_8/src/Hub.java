@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// 4.Lớp quản lý trung tâm hub
 class Hub {
     private List<Device> devices;
 

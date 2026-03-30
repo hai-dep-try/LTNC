@@ -1,4 +1,4 @@
-// Lớp Điện tử
+
 class Electronic extends Product {
     private int warrantyMonths;
 
