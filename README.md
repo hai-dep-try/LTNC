@@ -1,4 +1,4 @@
-# LTNC - Lập trình nâng cao (OOP)
+# LTNC - Lập trình nâng cao
 
 Repository này lưu trữ toàn bộ tài liệu học tập, bài giảng và lời giải bài tập cho môn học **Lập trình nâng cao (Advanced Programming)**.
 
