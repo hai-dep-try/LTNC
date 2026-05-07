@@ -1,0 +1,6 @@
+com\example\bank\BankAccountTest.class
+com\example\bank\BankAccountTest$HistoryTests.class
+com\example\bank\BankAccountTest$WithdrawTests.class
+com\example\bank\BankServiceTest.class
+com\example\bank\BankAccountTest$ConstructorTests.class
+com\example\bank\BankAccountTest$DepositTests.class

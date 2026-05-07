@@ -1,0 +1,17 @@
+# JetBrains IDE files
+.idea/
+*.iml
+out/
+gen/
+
+# VS Code files
+.vscode/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db

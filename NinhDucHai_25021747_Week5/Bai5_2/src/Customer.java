@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+class Customer {
+    String id;
+    String name;
 
-public class Customer {
+    public Customer(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 }

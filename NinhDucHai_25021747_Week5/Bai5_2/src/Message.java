@@ -1,4 +1,9 @@
-package PACKAGE_NAME;
+class Message {
+    String id;
+    String content;
 
-public class Message {
+    public Message(String id, String content) {
+        this.id = id;
+        this.content = content;
+    }
 }

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.bank.BankSystemTest$TransferTests" time="0.034" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="F:\Dai cuong\007.OOP\NinhDucHai_25021747_Week9\Bai9_9\target\test-classes;F:\Dai cuong\007.OOP\NinhDucHai_25021747_Week9\Bai9_9\target\classes;C:\Users\AD\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\AD\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\AD\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\AD\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\AD\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\AD\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\AD\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.18\bin"/>
+    <property name="sun.java.command" value="C:\Users\AD\AppData\Local\Temp\surefire17469093408667106865\surefirebooter-20260507132435308_3.jar C:\Users\AD\AppData\Local\Temp\surefire17469093408667106865 2026-05-07T13-24-35_028-jvmRun1 surefire-20260507132435308_1tmp surefire_0-20260507132435308_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="F:\Dai cuong\007.OOP\NinhDucHai_25021747_Week9\Bai9_9\target\test-classes;F:\Dai cuong\007.OOP\NinhDucHai_25021747_Week9\Bai9_9\target\classes;C:\Users\AD\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\AD\.m2\repository\ch\qos\logback\logback-classic\1.4.11\logback-classic-1.4.11.jar;C:\Users\AD\.m2\repository\ch\qos\logback\logback-core\1.4.11\logback-core-1.4.11.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter\5.9.2\junit-jupiter-5.9.2.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\AD\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\AD\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\AD\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.9.2\junit-jupiter-params-5.9.2.jar;C:\Users\AD\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\AD\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\AD"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-01-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.18"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="F:\Dai cuong\007.OOP\NinhDucHai_25021747_Week9\Bai9_9"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\AD\AppData\Local\Temp\surefire17469093408667106865\surefirebooter-20260507132435308_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.18+8-LTS-264"/>
+    <property name="user.name" value="AD"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\AD\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\AD\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.18"/>
+    <property name="user.dir" value="F:\Dai cuong\007.OOP\NinhDucHai_25021747_Week9\Bai9_9"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.18\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;F:\mingw64\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;F:\git\Git\cmd;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.15\bin;C:\Users\AD\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\AD\AppData\Local\Programs\Python\Python313\;C:\Users\AD\AppData\Local\Microsoft\WindowsApps;C:\Users\AD\AppData\Local\Programs\Microsoft VS Code\bin;F:\Antigravity\bin;C:\Users\AD\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-17.0.18\bin;C:\Users\AD\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.18+8-LTS-264"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="historyIsUnmodifiable" classname="com.example.bank.BankSystemTest" time="0.171">
+    <system-out><![CDATA[13:24:36.480 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Setting up test fixtures...
+13:24:36.582 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=82006283, holder=Alice
+13:24:36.585 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=82006283, balance=1000.0
+13:24:36.586 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=B24C95AA, holder=Bob
+13:24:36.587 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=B24C95AA, balance=200.0
+13:24:36.592 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.Transaction&amp#27;[0;39m - Transaction created: id=TX-8FBE7F, type=DEPOSIT, amount=100.0
+13:24:36.593 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Deposit OK: accountId=82006283, amount=100.0, newBalance=1100.0
+13:24:36.593 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Transaction recorded: [TX-8FBE7F] DEPOSIT      100.00  Deposit by Alice @ 2026-05-07T13:24:36.592270700
+]]></system-out>
+  </testcase>
+  <testcase name="negativeInitialBalanceThrows" classname="com.example.bank.BankSystemTest" time="0.008">
+    <system-out><![CDATA[13:24:36.637 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Setting up test fixtures...
+13:24:36.638 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=E305B7F8, holder=Alice
+13:24:36.639 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=E305B7F8, balance=1000.0
+13:24:36.639 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=C4AFCADC, holder=Bob
+13:24:36.639 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=C4AFCADC, balance=200.0
+13:24:36.640 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=34F97E61, holder=Bad
+13:24:36.640 &amp#27;[1;31mERROR&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account creation rejected: negative initialBalance=-100.0 for holder=Bad
+]]></system-out>
+  </testcase>
+  <testcase name="accountIdPresent" classname="com.example.bank.BankSystemTest" time="0.007">
+    <system-out><![CDATA[13:24:36.644 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Setting up test fixtures...
+13:24:36.645 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=0D6F9EEE, holder=Alice
+13:24:36.645 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=0D6F9EEE, balance=1000.0
+13:24:36.646 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=FA163CD9, holder=Bob
+13:24:36.646 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=FA163CD9, balance=200.0
+]]></system-out>
+  </testcase>
+  <testcase name="transferZeroThrows" classname="com.example.bank.BankSystemTest$TransferTests" time="0.007">
+    <system-out><![CDATA[13:24:36.655 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Setting up test fixtures...
+13:24:36.657 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=6A49D61C, holder=Alice
+13:24:36.657 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=6A49D61C, balance=1000.0
+13:24:36.657 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=F1734F9F, holder=Bob
+13:24:36.658 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=F1734F9F, balance=200.0
+13:24:36.660 &amp#27;[31mWARN &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankService&amp#27;[0;39m - Transfer rejected: non-positive amount=0.0
+]]></system-out>
+  </testcase>
+  <testcase name="transferMovesBalance" classname="com.example.bank.BankSystemTest$TransferTests" time="0.017">
+    <system-out><![CDATA[13:24:36.664 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Setting up test fixtures...
+13:24:36.665 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=9AE22165, holder=Alice
+13:24:36.665 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=9AE22165, balance=1000.0
+13:24:36.665 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=2DFAFCC2, holder=Bob
+13:24:36.665 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=2DFAFCC2, balance=200.0
+13:24:36.666 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=9AE22165, balance=1000.0
+13:24:36.666 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=2DFAFCC2, balance=200.0
+13:24:36.666 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Test: transfer(300) from alice=1000.0 to bob=200.0
+13:24:36.668 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankService&amp#27;[0;39m - Transfer initiated: from=9AE22165, to=2DFAFCC2, amount=300.0
+13:24:36.668 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.Transaction&amp#27;[0;39m - Transaction created: id=TX-E223F4, type=WITHDRAWAL, amount=300.0
+13:24:36.669 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Withdrawal OK: accountId=9AE22165, amount=300.0, newBalance=700.0
+13:24:36.669 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Transaction recorded: [TX-E223F4] WITHDRAWAL   300.00  Withdrawal by Alice @ 2026-05-07T13:24:36.668701600
+13:24:36.670 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.Transaction&amp#27;[0;39m - Transaction created: id=TX-B0E23E, type=DEPOSIT, amount=300.0
+13:24:36.670 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Deposit OK: accountId=2DFAFCC2, amount=300.0, newBalance=500.0
+13:24:36.670 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Transaction recorded: [TX-B0E23E] DEPOSIT      300.00  Deposit by Bob @ 2026-05-07T13:24:36.670221200
+13:24:36.670 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=9AE22165, balance=700.0
+13:24:36.670 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=2DFAFCC2, balance=500.0
+13:24:36.671 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankService&amp#27;[0;39m - Transfer complete: from=9AE22165 newBalance=700.0, to=2DFAFCC2 newBalance=500.0
+13:24:36.671 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=9AE22165, balance=700.0
+13:24:36.677 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=2DFAFCC2, balance=500.0
+13:24:36.678 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=9AE22165, balance=700.0
+13:24:36.678 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Balance queried: accountId=2DFAFCC2, balance=500.0
+13:24:36.678 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Test PASSED: alice=700.0, bob=500.0
+]]></system-out>
+  </testcase>
+  <testcase name="transferInsufficientFunds" classname="com.example.bank.BankSystemTest$TransferTests" time="0.005">
+    <system-out><![CDATA[13:24:36.681 &amp#27;[39mDEBUG&amp#27;[0;39m [main] &amp#27;[36mc.example.bank.BankSystemTest&amp#27;[0;39m - Setting up test fixtures...
+13:24:36.682 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=ED7701F4, holder=Alice
+13:24:36.682 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=ED7701F4, balance=1000.0
+13:24:36.682 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Account created: accountId=E39A494F, holder=Bob
+13:24:36.682 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Initial balance applied: accountId=E39A494F, balance=200.0
+13:24:36.683 &amp#27;[34mINFO &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankService&amp#27;[0;39m - Transfer initiated: from=ED7701F4, to=E39A494F, amount=9999.0
+13:24:36.683 &amp#27;[31mWARN &amp#27;[0;39m [main] &amp#27;[36mcom.example.bank.BankAccount&amp#27;[0;39m - Insufficient funds: accountId=ED7701F4, requested=9999.0, available=1000.0
+]]></system-out>
+  </testcase>
+</testsuite>

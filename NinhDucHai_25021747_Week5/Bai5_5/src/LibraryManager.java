@@ -1,4 +1,10 @@
-package PACKAGE_NAME;
+// Interface định nghĩa các chức năng chuẩn
+interface LibraryManager {
+    void addBook(Book book);
 
-public class LibraryManager {
+    Book searchById(String id);
+
+    void deleteById(String id);
+
+    void printAll();
 }

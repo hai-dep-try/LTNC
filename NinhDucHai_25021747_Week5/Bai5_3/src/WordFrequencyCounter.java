@@ -51,7 +51,6 @@ public class WordFrequencyCounter {
 
         // In kết quả
         System.out.println("Văn bản gốc: " + text);
-        System.out.println("\n--- KẾT QUẢ THỐNG KÊ ---");
         System.out.println("Từ xuất hiện nhiều nhất: '" + mostFrequentWord + "' (" + maxCount + " lần)");
         System.out.println("Các từ chỉ xuất hiện 1 lần (Unique words): " + uniqueWords);
     }

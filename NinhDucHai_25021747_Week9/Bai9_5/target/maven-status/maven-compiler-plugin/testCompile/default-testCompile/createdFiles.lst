@@ -1,0 +1,12 @@
+com\example\MathUtilsTest$IsEvenTests.class
+com\example\FileUtilsTest.class
+com\example\MathUtilsTest$MultiplyTests.class
+com\example\MathUtilsTest$SubtractTests.class
+com\example\FileUtilsTest$SeparatorTests.class
+com\example\MathUtilsTest$FactorialTests.class
+com\example\MathUtilsTest$IsPrimeTests.class
+com\example\FileUtilsTest$BuildPathTests.class
+com\example\MathUtilsTest$AddTests.class
+com\example\MathUtilsTest$DivideTests.class
+com\example\FileUtilsTest$GetExtensionTests.class
+com\example\MathUtilsTest.class

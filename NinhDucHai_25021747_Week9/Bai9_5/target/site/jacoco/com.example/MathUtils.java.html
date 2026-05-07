@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MathUtils.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MathUtils-Coverage</a> &gt; <a href="index.source.html" class="el_package">com.example</a> &gt; <span class="el_source">MathUtils.java</span></div><h1>MathUtils.java</h1><pre class="source lang-java linenums">package com.example;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+/**
+ * MathUtils – mathematical utility class.
+ *
+ * &lt;p&gt;Every public method is fully tested to achieve the required
+ * 80% JaCoCo coverage threshold.&lt;/p&gt;
+ */
+<span class="fc" id="L12">public class MathUtils {</span>
+
+<span class="fc" id="L14">    private static final Logger LOGGER = LoggerFactory.getLogger(MathUtils.class);</span>
+
+    /**
+     * Returns the sum of two integers.
+     *
+     * @param a first operand
+     * @param b second operand
+     * @return a + b
+     */
+    public int add(int a, int b) {
+<span class="fc" id="L24">        int result = a + b;</span>
+<span class="fc" id="L25">        LOGGER.debug(&quot;add({}, {}) = {}&quot;, a, b, result);</span>
+<span class="fc" id="L26">        return result;</span>
+    }
+
+    /**
+     * Returns the difference of two integers.
+     *
+     * @param a first operand
+     * @param b second operand
+     * @return a - b
+     */
+    public int subtract(int a, int b) {
+<span class="fc" id="L37">        int result = a - b;</span>
+<span class="fc" id="L38">        LOGGER.debug(&quot;subtract({}, {}) = {}&quot;, a, b, result);</span>
+<span class="fc" id="L39">        return result;</span>
+    }
+
+    /**
+     * Returns the product of two integers.
+     *
+     * @param a first operand
+     * @param b second operand
+     * @return a * b
+     */
+    public int multiply(int a, int b) {
+<span class="fc" id="L50">        int result = a * b;</span>
+<span class="fc" id="L51">        LOGGER.debug(&quot;multiply({}, {}) = {}&quot;, a, b, result);</span>
+<span class="fc" id="L52">        return result;</span>
+    }
+
+    /**
+     * Returns the quotient of two doubles.
+     *
+     * @param a dividend
+     * @param b divisor; must not be zero
+     * @return a / b
+     * @throws ArithmeticException if b is zero
+     */
+    public double divide(double a, double b) {
+<span class="fc bfc" id="L64" title="All 2 branches covered.">        if (b == 0) {</span>
+<span class="fc" id="L65">            LOGGER.error(&quot;Division by zero: {} / {}&quot;, a, b);</span>
+<span class="fc" id="L66">            throw new ArithmeticException(&quot;Cannot divide by zero&quot;);</span>
+        }
+<span class="fc" id="L68">        double result = a / b;</span>
+<span class="fc" id="L69">        LOGGER.debug(&quot;divide({}, {}) = {}&quot;, a, b, result);</span>
+<span class="fc" id="L70">        return result;</span>
+    }
+
+    /**
+     * Returns {@code true} if the given integer is even.
+     *
+     * @param n any integer
+     * @return true when n is divisible by 2
+     */
+    public boolean isEven(int n) {
+<span class="fc bfc" id="L80" title="All 2 branches covered.">        boolean result = (n % 2 == 0);</span>
+<span class="fc" id="L81">        LOGGER.debug(&quot;isEven({}) = {}&quot;, n, result);</span>
+<span class="fc" id="L82">        return result;</span>
+    }
+
+    /**
+     * Computes the factorial of a non-negative integer.
+     *
+     * @param n non-negative integer
+     * @return n!
+     * @throws IllegalArgumentException if n is negative
+     */
+    public long factorial(int n) {
+<span class="fc bfc" id="L93" title="All 2 branches covered.">        if (n &lt; 0) {</span>
+<span class="fc" id="L94">            LOGGER.error(&quot;factorial() called with negative: {}&quot;, n);</span>
+<span class="fc" id="L95">            throw new IllegalArgumentException(&quot;Factorial undefined for negative numbers&quot;);</span>
+        }
+<span class="fc" id="L97">        long result = 1;</span>
+<span class="fc bfc" id="L98" title="All 2 branches covered.">        for (int i = 2; i &lt;= n; i++) {</span>
+<span class="fc" id="L99">            result *= i;</span>
+        }
+<span class="fc" id="L101">        LOGGER.debug(&quot;factorial({}) = {}&quot;, n, result);</span>
+<span class="fc" id="L102">        return result;</span>
+    }
+
+    /**
+     * Returns {@code true} if the given integer is prime.
+     *
+     * @param n the number to test
+     * @return true when n is a prime number
+     */
+    public boolean isPrime(int n) {
+<span class="fc bfc" id="L112" title="All 2 branches covered.">        if (n &lt; 2) {</span>
+<span class="fc" id="L113">            return false;</span>
+        }
+<span class="fc bfc" id="L115" title="All 2 branches covered.">        for (int i = 2; i * i &lt;= n; i++) {</span>
+<span class="fc bfc" id="L116" title="All 2 branches covered.">            if (n % i == 0) {</span>
+<span class="fc" id="L117">                return false;</span>
+            }
+        }
+<span class="fc" id="L120">        LOGGER.debug(&quot;isPrime({}) = true&quot;, n);</span>
+<span class="fc" id="L121">        return true;</span>
+    }
+
+    /**
+     * Application entry point.
+     *
+     * @param args command-line arguments (not used)
+     */
+    public static void main(String[] args) {
+<span class="nc" id="L130">        LOGGER.info(&quot;=== MathUtils Coverage Demo ===&quot;);</span>
+<span class="nc" id="L131">        MathUtils math = new MathUtils();</span>
+<span class="nc" id="L132">        LOGGER.info(&quot;add(3,5)      = {}&quot;, math.add(3, 5));</span>
+<span class="nc" id="L133">        LOGGER.info(&quot;factorial(6)  = {}&quot;, math.factorial(6));</span>
+<span class="nc" id="L134">        LOGGER.info(&quot;isPrime(13)   = {}&quot;, math.isPrime(13));</span>
+<span class="nc" id="L135">        LOGGER.info(&quot;=== Done ===&quot;);</span>
+<span class="nc" id="L136">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>

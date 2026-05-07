@@ -1,0 +1,106 @@
+# ============================================================
+# ci-fail-demo.yml – Demonstrates a FAILING build and
+# how to debug it using GitHub Actions execution logs.
+#
+# PURPOSE: Educational only – shows what CI logs look like
+# when a test fails, a compile error occurs, etc.
+#
+# This workflow is triggered MANUALLY (workflow_dispatch)
+# so it does not interfere with the main CI pipeline.
+# ============================================================
+
+name: "[DEMO] Intentional Failure + Debug"
+
+on:
+  workflow_dispatch:
+    inputs:
+      failure_mode:
+        description: "Type of failure to simulate"
+        required: true
+        default: "test_failure"
+        type: choice
+        options:
+          - test_failure        # a unit test asserts wrong value
+          - compile_error       # introduces a syntax error
+
+jobs:
+  demo-fail:
+    name: "Demonstrate ${{ inputs.failure_mode }}"
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: Bai9_3
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      # ── Inject a deliberate failure ────────────────────────
+      - name: "[DEMO] Inject test failure"
+        if: inputs.failure_mode == 'test_failure'
+        run: |
+          echo ">>> Injecting intentional test failure..."
+          # Replace a correct assertion with a wrong expected value.
+          # assertEquals(8, math.add(3, 5)) → assertEquals(99, math.add(3, 5))
+          sed -i 's/assertEquals(8, math.add(3, 5))/assertEquals(99, math.add(3, 5))/' \
+            src/test/java/com/example/MathUtilsTest.java
+          echo ">>> File patched. This test WILL fail:"
+          grep -n "assertEquals(99" src/test/java/com/example/MathUtilsTest.java || true
+
+      - name: "[DEMO] Inject compile error"
+        if: inputs.failure_mode == 'compile_error'
+        run: |
+          echo ">>> Injecting intentional compile error..."
+          # Append a syntax error to MathUtils.java
+          echo "THIS IS NOT VALID JAVA CODE" >> src/main/java/com/example/MathUtils.java
+          echo ">>> Compile error injected."
+
+      # ── Run Maven (expected to fail) ──────────────────────
+      - name: Run Maven build (will FAIL intentionally)
+        id: maven_build
+        run: mvn clean test -B
+        # When this step fails, GitHub Actions marks it red.
+        # Execution logs show the EXACT error: line number,
+        # assertion mismatch value, or compiler message.
+
+      # ── Always upload reports for post-mortem ─────────────
+      - name: "[DEBUG] Upload Surefire failure reports"
+        if: failure()             # only runs when a previous step failed
+        uses: actions/upload-artifact@v4
+        with:
+          name: failure-surefire-reports
+          path: Bai9_3/target/surefire-reports/
+          retention-days: 3
+
+      # ── Print debug instructions ───────────────────────────
+      - name: "[DEBUG] How to read the failure logs"
+        if: failure()
+        run: |
+          echo "======================================================"
+          echo "  HOW TO DEBUG THIS FAILURE IN GITHUB ACTIONS"
+          echo "======================================================"
+          echo ""
+          echo "1. Click the red 'X' step above ('Run Maven build')"
+          echo "2. Expand the step to see the full Maven output."
+          echo ""
+          echo "For a TEST FAILURE you will see:"
+          echo "  [ERROR] MathUtilsTest.AddTests.addPositive  FAILED"
+          echo "  expected: <99> but was: <8>"
+          echo "  at MathUtilsTest.java:35"
+          echo ""
+          echo "For a COMPILE ERROR you will see:"
+          echo "  [ERROR] MathUtils.java:[N,0] illegal start of expression"
+          echo "  [ERROR] 1 error"
+          echo ""
+          echo "3. Download 'failure-surefire-reports' artifact"
+          echo "   -> Open TEST-com.example.MathUtilsTest.xml"
+          echo "   -> The <failure> element contains the full stack trace."
+          echo "======================================================"

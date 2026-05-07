@@ -1,0 +1,16 @@
+2026-05-07 10:49:51.211 DEBUG [main] com.example.MathUtils - isPrime(13) = true
+2026-05-07 10:49:51.227 ERROR [main] com.example.MathUtils - factorial() called with negative input: -1
+2026-05-07 10:49:51.232 DEBUG [main] com.example.MathUtils - factorial(0) = 1
+2026-05-07 10:49:51.236 DEBUG [main] com.example.MathUtils - factorial(6) = 720
+2026-05-07 10:49:51.241 DEBUG [main] com.example.MathUtils - isEven(8) = true
+2026-05-07 10:49:51.244 DEBUG [main] com.example.MathUtils - isEven(0) = true
+2026-05-07 10:49:51.244 DEBUG [main] com.example.MathUtils - isEven(7) = false
+2026-05-07 10:49:51.254 ERROR [main] com.example.MathUtils - Division by zero: 10.0 / 0.0
+2026-05-07 10:49:51.256 DEBUG [main] com.example.MathUtils - divide(15.0, 4.0) = 3.75
+2026-05-07 10:49:51.261 DEBUG [main] com.example.MathUtils - multiply(6, 7) = 42
+2026-05-07 10:49:51.269 DEBUG [main] com.example.MathUtils - multiply(999, 0) = 0
+2026-05-07 10:49:51.280 DEBUG [main] com.example.MathUtils - subtract(2, 5) = -3
+2026-05-07 10:49:51.283 DEBUG [main] com.example.MathUtils - subtract(10, 4) = 6
+2026-05-07 10:49:51.289 DEBUG [main] com.example.MathUtils - add(7, 0) = 7
+2026-05-07 10:49:51.294 DEBUG [main] com.example.MathUtils - add(3, 5) = 8
+2026-05-07 10:49:51.297 DEBUG [main] com.example.MathUtils - add(3, -5) = -2
